@@ -1,22 +1,163 @@
-## Caroline Birkinshaw 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Html/CSS table challenge</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
 
-### About me 
+<html lang="en">
+  <head><link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet"></head>
 
-I'm new to the coding scene, currently studying [JAMStack with the Coders Guild](https://thecodersguild.org.uk/blog/learn-web-and-app-development-with-the-jamstack/). My only previous coding experience is self taught in my role as a website content editor, mainly working through the html using the CMS to clear dodgy formatting carried over by contributors who copied and pasted directly from Word rather than using a text editor.
+  <style>
+    
+    table {
+      table-layout: fixed;
+      width: 100%;
+      height: 100%;
+      border-collapse: collapse;
+      border-color: #800080;
+      border-width: 2px;
+      border-style: solid;
+      margin: 30px, 30px, 30px, 30px;
+      
+      }
 
-I studied French and Italian at university, and also have a good working knowledge (enough to order a beer at least!) of German. I'm hoping these skills will help me learn these new coding languages.
+      caption {
+        display: table-caption;
+        font-family: "Rock Salt", cursive;
+        text-align: right;
+        caption-side: bottom;
+      }
 
+      th {
+        font-family: "Rock Salt", cursive;
+        text-align: center;
+        color: white;
+        padding: 10px;
+        background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.5));
+      }
+      
+      tbody {
+        font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+        font-weight: bold;
+        text-align: center;
+        background-color: #ff33cc;
+        background-image:url(https://cdn.glitch.com/8b1beacc-937c-4072-93d6-4ae825ab1a7a%2Fnoise.png);
+      }
 
+      td {
+        padding: 10px;
+        }
 
-![Caroline with her husband and daughter](https://drive.google.com/file/d/1PXo22ozmkNQzsKZ5YOAh_bZ8WX5_OIv7)
+      .column {
+        border-color: #800080;
+         border-width: 2px;
+         border-style: solid;
+      }
 
-I am a native Cumbrian, but brought my husband back to his homeland of West Yorkshire in September 2019. We have a 20 month old daughter, Charlotte. After nearly two years out of work to be her primary carer, I am looking for opportunities to return to adult world and not have to listen to Hey Duggee all day!\
-I love being a mum, but slightly worried that my daughter has learned to say 'stab' before 'mummy'.
+      .light-background {
+        background-color: #e495e4;
+      }
+      tfoot {
+        font-family: "Rock Salt", cursive;
+        font-weight: bold;
+        color: white;
+        text-align: right;
+      }
 
-### Interests
+      .text-left {
+        text-align: left;
+      }
 
-- Football (As a Blackburn Rovers fan my happy place is most certainly **NOT** Turf Moor)
-- Languages - French, German, Italian and am currently learning some Makaton and BSL to help my daughter with her communication skills.
-- Baking
-- Girlguiding - I've been a Brownnie Leader for 7 years and am currently organising and leading meetings for our unit via Zoom.
+      .gradient {
+        background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.5));
+      }
+
+      .leopard-skin {
+         background-image: url(https://cdn.glitch.com/8b1beacc-937c-4072-93d6-4ae825ab1a7a%2Fleopardskin.jpg?1527763317245);
+         border-color: #800080;
+         border-width: 2px;
+         border-style: solid;
+      }
+        
+
+  </style>
+  
+  <body>
+    <table>
+      <caption>A summary of the UK's most famous punk bands</caption>
+      <thead class="leopard-skin">
+        <tr>
+        <th class="column">BAND</th>
+        <th class="column">YEAR FORMED</th>
+        <th class="column">NO. OF ALBUMS</th>
+        <th class="column">MOST FAMOUS SONG</th>
+      </tr>
+    </thead>
+      <tbody>
+        <tr>
+        <td>Buzzcocks</td>
+        <td>1976</td>
+        <td>9</td>
+        <td>Ever fallen in love (with someone you shouldn't've)</td>
+      </tr>
+      <tr class="light-background">
+        <td>The Clash</td>
+        <td>1976</td>
+        <td>6</td>
+        <td>London Calling</td>
+      </tr>
+      <tr>
+        <td>The Damned</td>
+        <td>1976</td>
+        <td>10</td>
+        <td>Smash it up</td>
+      </tr>
+      <tr class="light-background">
+        <td>Sex Pistols</td>
+        <td>1975</td>
+        <td>1</td>
+        <td>Anarchy in the UK</td>
+      </tr>
+      <tr>
+        <td>Sham 69</td>
+        <td>1976</td>
+        <td>13</td>
+        <td>If The Kids Are United</td>
+      </tr>
+      <tr class="light-background">
+        <td>Siouxsie and the Banshees</td>
+        <td>1976</td>
+        <td>11</td>
+        <td>Hong Kong Garden</td>
+      </tr>
+      <tr>
+        <td>Stiff Little Fingers</td>
+        <td>1977</td>
+        <td>10</td>
+        <td>Suspect Device</td>
+      </tr>
+      <tr class ="light-background">
+        <td>The Stranglers</td>
+        <td>1974</td>
+        <td>17</td>
+        <td>No More Heroes</td>
+      </tr>
+    </tbody>
+    <tfoot class="leopard-skin">
+      <tr class="gradient">
+          <td colspan="2" class="column">TOTAL ALBUMS</td>
+          <td colspan="2" class="text-left column">77</td>
+          </tr>
+    </tfoot>
+    </table>
+  
+  </body>
+</html>
+
 
